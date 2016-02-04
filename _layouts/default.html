@@ -3,18 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>Jekyll en Español</title>
+    <link href="{{site.baseurl}}/css/common.css" rel="stylesheet">
   </head>
   <body>
     <header>
       <h1>Jekyll en Español</h1>
-      <nav>
-        <ul>
-          <li><a href="{{site.baseurl}}/index.html">Inicio</a></li>
-          <li><a href="{{site.baseurl}}/news.html">Guías</a></li>
-        </ul>
-      </nav>
+      {% include nav.html %}
     </header>
 {{content}}
 
+  <footer>
+    {% include nav.html %}
+    <p>&copy; 2016 - Jekyll en Español</p>
   </body>
 </html>
